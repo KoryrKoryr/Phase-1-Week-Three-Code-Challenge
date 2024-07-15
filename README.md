@@ -31,8 +31,4 @@
 
    json-server --watch db.json
 
-5. Open index.html in your browser to view the application.
-
-# View web app:
-To view web up in browser, follow the link below:
-https://koryrkoryr.github.io/Phase-1-Week-Three-Code-Challenge/
+5. Open index.html in your browser to view the application or follow the link: https://koryrkoryr.github.io/Phase-1-Week-Three-Code-Challenge/
