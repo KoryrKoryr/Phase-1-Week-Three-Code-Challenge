@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  display: flex;
+}
+
+#films {
+  list-style: none;
+  padding: 0;
+}
+
+#films li {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#movie-details {
+  margin-left: 20px;
+}
+
+#poster {
+  max-width: 200px;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
