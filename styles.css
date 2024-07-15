@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: rgb(135, 206, 250);
 }
 
 #container {
@@ -26,5 +27,5 @@ body {
 }
 
 button:disabled {
-  background-color: #ccc;
+  background-color: #bb1b1b;
 }
