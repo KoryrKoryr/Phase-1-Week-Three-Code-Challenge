@@ -37,6 +37,20 @@ document.addEventListener("DOMContentLoaded", () => {
     description.textContent = movie.description;
 
     buyTicketButton.disabled = available === 0;
+
+    // Add event listener to each list item
+    filmList.querySelectorAll("li").forEach((li) => {
+      li.addEventListener("click", () => {
+        // Remove the "Selected" class from all list items
+        filmList.querySelectorAll("li").forEach((item) => {
+          item.classList.remove("selected");
+        });
+        // Add the "Selected" class to the clicked list item
+        li.classList.add("selected");
+      });
+    });
+    //  Handles the click event for the buy ticket button.
+    //  Updates the movie's ticket sales count and disables the button if no tickets are available
     buyTicketButton.onclick = () => {
       if (available > 0) {
         movie.tickets_sold += 1;

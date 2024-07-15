@@ -1,10 +1,12 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: rgb(135, 206, 250);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rosybrown;
 }
 
 #container {
   display: flex;
+  background-color: darkseagreen;
 }
 
 #films {
@@ -15,7 +17,14 @@ body {
 #films li {
   cursor: pointer;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid silver;
+}
+#films li:hover {
+  background-color: lightblue;
+}
+
+.selected {
+  background-color: lightblue;
 }
 
 #movie-details {
@@ -26,6 +35,29 @@ body {
   max-width: 200px;
 }
 
+button {
+  background-color: #4caf50;
+  color: aliceblue;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
 button:disabled {
   background-color: #bb1b1b;
+}
+
+#header {
+  background-color: darkseagreen;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#header h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+#header h3 {
+  color: black;
+  font-style: italic;
 }
